@@ -1,7 +1,7 @@
 const postgres = require('postgres');
 
 const connectionString = process.env.DATABASE_URL || 
-  'postgresql://postgres.sb_publishable_s7H2Ion6rXEWvNfMCMi2Uw_cfxLwYfY@aws-0-me-south-1.pooler.supabase.com:6543/postgres';
+  'postgresql://postgresql://postgres:[Sadeq@1982aa]@db.toymcbwhhfimqvdadwwl.supabase.co:5432/postgres';
 
 const sql = postgres(connectionString);
 
