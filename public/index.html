@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <title>نظام إدارة المخيم الطبي</title>
+    <!-- Vercel Web Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
     <style>
         * { box-sizing: border-box; }
         body {
@@ -371,7 +376,7 @@
             <thead>
                 <tr>
                     <th>م</th><th>اسم الصنف</th><th>الوحدة</th><th>السعر</th><th>المطلوب للعمل</th>
-                    <th>الكمية المشتراة</th><th>السعر الفعلي</th><th>الإجمالي</th><th>حفظ</th>
+                    <th>ال��مية المشتراة</th><th>السعر الفعلي</th><th>الإجمالي</th><th>حفظ</th>
                 </tr>
             </thead>
             <tbody id="purchaseCampTable"></tbody>
@@ -496,7 +501,7 @@
         </div>
         <div style="background: #e0f7fa; padding: 15px; border-radius: 10px; text-align: center;">
             <h3 style="margin: 0; color: #00838f;">💵 إجمالي المستحقات</h3>
-            <p style="font-size: 24px; font-weight: bold; margin: 10px 0 0;" id="totalPayments">0 ريال</p>
+            <p style="font-size: 24px; font-weight: bold; margin: 10px 0 0;" id="totalPayments">0 ريا��</p>
         </div>
     </div>
     
@@ -1421,7 +1426,7 @@ async function syncBeforeQty() {
     
     if (result.success) {
         alert(result.message);
-        loadInventory(); // تحديث الجرد لإظهار القيم الجديدة
+        loadInventory(); // تحديث الجرد لإظهار القيم الجديد��
     } else {
         alert(result.message || "حدث خطأ أثناء المزامنة");
     }
