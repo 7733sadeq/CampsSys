@@ -1421,7 +1421,7 @@ async function syncBeforeQty() {
     
     if (result.success) {
         alert(result.message);
-        loadInventory(); // تحديث الجرد لإظهار القيم الجديدة
+        loadInventory(); // تحديث الجرد لإظهار القيم الجديد��
     } else {
         alert(result.message || "حدث خطأ أثناء المزامنة");
     }
@@ -2213,5 +2213,12 @@ async function ImportPaymentsFromExcel(workbook) {
     // بدء التشغيل
     show("loginPage");
 </script>
+
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
 </body>
 </html>
